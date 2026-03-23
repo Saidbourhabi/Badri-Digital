@@ -7,6 +7,7 @@ import Home from './pages/home/home'
 import NotFound from './pages/NotFound'
 // layouts impots
 import Navbar from './components/layouts/Navbar'
+import Footer from './components/layouts/Footer'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         {/*  404 page route */}
       <Route path="*" element={<NotFound />} />
     </Routes>
+    <Footer />
     </>
   )
 }
