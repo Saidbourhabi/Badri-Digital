@@ -5,11 +5,14 @@ import { Route, Routes } from 'react-router-dom'
 import Home from './pages/home/home'
 // 404 page
 import NotFound from './pages/NotFound'
+// layouts impots
+import Navbar from './components/layouts/Navbar'
 
 function App() {
 
   return (
     <>
+    <Navbar />
     <Routes>
       <Route path="/" element={<Home />} />
         {/*  404 page route */}
