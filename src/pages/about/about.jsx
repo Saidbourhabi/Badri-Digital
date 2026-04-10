@@ -1,5 +1,5 @@
 import React from 'react';
-import alibedri from '../../assets/images/badri-ali.jpeg';
+import alibedri from '../../assets/images/badridigital-owners.jpeg';
 import SEO from '../../components/seo/SEO';
 
 const About = () => {
@@ -27,7 +27,7 @@ backgroundSize: 'cover'
 }}
 />
 
-<div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
+<div className="absolute inset-0 bg-black/60 " />
 </div>
 
 {/* Content */}
