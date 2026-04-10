@@ -15,12 +15,14 @@ import Navbar from './components/layouts/Navbar'
 import Footer from './components/layouts/Footer'
 // UI components
 import Loader from './components/ui/Loader'
+import CustomCursor from './components/ui/CustomCursor'
 
 function App() {
 
   return (
     <>
     <Loader duration={4000} />
+    <CustomCursor />
     <Navbar />
     <Routes>
       <Route path="/" element={<Home />} />
