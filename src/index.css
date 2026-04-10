@@ -59,3 +59,19 @@ body {
 a, button, .project-item, [data-cursor="hover"] {
   cursor: none;
 }
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #aeaeae99;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #000000;
+}
