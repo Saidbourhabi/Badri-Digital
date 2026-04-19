@@ -1,5 +1,5 @@
 import SEO from "../../components/seo/SEO"
-import alibedri from "../../assets/images/badri-ali.jpeg"
+import camerabg from "../../assets/images/oldcamera.webp"
 import logo2m from "../../assets/logos/2m.svg"
 import logoClient2 from "../../assets/logos/Mawazine.svg"
 import logoClient3 from "../../assets/logos/nas-el-ghiwane.svg"
@@ -70,7 +70,7 @@ export default function Contact() {
         {/* Background image + overlay */}
         <div className="absolute inset-0">
           <img
-            src={alibedri}
+            src={camerabg}
             alt="Badri Digital Photographer Casablanca"
             className="w-full h-full object-cover"
             loading="eager"
