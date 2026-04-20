@@ -9,6 +9,7 @@ import img3  from "../../assets/images/badridigital-owners.jpeg"
 import img4  from "../../assets/images/badridigital-owners.jpeg"
 import img5  from "../../assets/images/badridigital-owners.jpeg"
 import img6  from "../../assets/images/badridigital-owners.jpeg"
+import img7  from "../../assets/images/brand-shooting.webp"
 import alibedri  from "../../assets/images/badri-ali.jpeg"
 
 
@@ -19,10 +20,11 @@ const IMAGES = [
   { id: "conference-2", src: img4,   w: 7008, h: 4672, category: "conference", alt: "Conference panel" },
   { id: "food-1", src: img5,   w: 7008, h: 4672, category: "food", alt: "Food photography" },
   { id: "food-2", src: img6,   w: 7008, h: 4672, category: "food", alt: "Food photography" },
+  { id: "brand-1", src: img7,   w: 2160, h: 2880, category: "portrait", alt: "Portrait photography" },
   // Add more images with appropriate categories and dimensions]
 ]
 
-const CATEGORIES = ["all", "events", "conference", "sports", "food"]
+const CATEGORIES = ["all", "events", "conference", "sports", "food","portrait"]
 
 const SEO_META = {
   all: {
@@ -49,6 +51,11 @@ const SEO_META = {
     title:       "Food & Restaurant Photography Portfolio | Badri Digital Casablanca",
     description: "Appetising food and restaurant photography to elevate your menu, social media and brand identity. Badri Digital, Casablanca.",
     keywords:    "food photography Casablanca, restaurant photographer Morocco, food photographer Badri Digital",
+  },
+  portrait: {
+    title:       "Portrait Photography Portfolio | Badri Digital Casablanca",
+    description: "Capturing the essence of everyday life with artistic flair. Badri Digital, Casablanca.",
+    keywords:    "portrait photography Casablanca, portrait photographer Morocco, portrait photographer Badri Digital",
   },
 }
 
