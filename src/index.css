@@ -40,7 +40,7 @@ body {
   scroll-behavior: smooth;
 }
 
-.custom-cursor {
+/* .custom-cursor {
   position: fixed;
   top: 0;
   left: 0;
@@ -53,21 +53,21 @@ body {
   transform: translate(-50%, -50%);
   mix-blend-mode: difference;
   will-change: transform;
-}
+} */
 
 /* Only hide cursor for desktop */
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   a, button, .project-item, [data-cursor="hover"] {
     cursor: none;
   }
-}
+} */
 
 /* Mobile keeps default cursor */
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   a, button, .project-item, [data-cursor="hover"] {
     cursor: auto;
   }
-}
+} */
 ::-webkit-scrollbar {
   width: 5px;
 }
