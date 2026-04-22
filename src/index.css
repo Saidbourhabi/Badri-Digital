@@ -38,7 +38,6 @@ body {
   padding: 0;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  /* cursor: none; */
 }
 
 .custom-cursor {
@@ -56,8 +55,18 @@ body {
   will-change: transform;
 }
 
-a, button, .project-item, [data-cursor="hover"] {
-  cursor: none;
+/* Only hide cursor for desktop */
+@media (min-width: 768px) {
+  a, button, .project-item, [data-cursor="hover"] {
+    cursor: none;
+  }
+}
+
+/* Mobile keeps default cursor */
+@media (max-width: 767px) {
+  a, button, .project-item, [data-cursor="hover"] {
+    cursor: auto;
+  }
 }
 ::-webkit-scrollbar {
   width: 5px;
