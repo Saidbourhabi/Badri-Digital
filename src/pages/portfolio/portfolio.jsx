@@ -11,6 +11,13 @@ import img5  from "../../assets/images/badridigital-owners.jpeg"
 import img6  from "../../assets/images/badridigital-owners.jpeg"
 import img7  from "../../assets/images/brand-shooting.webp"
 import alibedri  from "../../assets/images/badri-ali.jpeg"
+// fashion img imports
+import outfit1  from "../../assets/images/fashion/outfit-blue.webp"
+import outfit2  from "../../assets/images/fashion/outfit-secend-blue.webp"
+import outfit3  from "../../assets/images/fashion/outfit-pink.webp"
+import outfit4  from "../../assets/images/fashion/outfit-white.webp"
+import outfit5  from "../../assets/images/fashion/outfit-sky.webp"
+import outfit6  from "../../assets/images/fashion/smile-portrait.webp"
 
 
 const IMAGES = [
@@ -21,10 +28,15 @@ const IMAGES = [
   { id: "food-1", src: img5,   w: 7008, h: 4672, category: "food", alt: "Food photography" },
   { id: "food-2", src: img6,   w: 7008, h: 4672, category: "food", alt: "Food photography" },
   { id: "brand-1", src: img7,   w: 2160, h: 2880, category: "portrait", alt: "Portrait photography" },
-  // Add more images with appropriate categories and dimensions]
+  { id: "fashion-1", src: outfit1,   w: 2016, h: 2689, category: "fashion", alt: "Fashion photography - blue outfit" },
+  { id: "fashion-2", src: outfit2,   w: 2160, h: 2880, category: "fashion", alt: "Fashion photography - second blue outfit" },
+  { id: "fashion-3", src: outfit3,   w: 2160, h: 2880, category: "fashion", alt: "Fashion photography - pink outfit" },
+  { id: "fashion-4", src: outfit4,   w: 2160, h: 3183, category: "fashion", alt: "Fashion photography - white outfit" },
+  { id: "fashion-5", src: outfit5,   w: 2160, h: 2880, category: "fashion", alt: "Fashion photography - sky outfit" },
+  { id: "fashion-6", src: outfit6,   w: 1670, h: 2226, category: "fashion", alt: "Fashion photography - smile portrait" },
 ]
 
-const CATEGORIES = ["all", "events", "conference", "sports", "food","portrait"]
+const CATEGORIES = ["all", "events", "conference", "sports", "food","portrait","fashion"]
 
 const SEO_META = {
   all: {
@@ -57,6 +69,11 @@ const SEO_META = {
     description: "Capturing the essence of everyday life with artistic flair. Badri Digital, Casablanca.",
     keywords:    "portrait photography Casablanca, portrait photographer Morocco, portrait photographer Badri Digital",
   },
+  fashion: {
+    title:       "Fashion Photography Portfolio | Badri Digital Casablanca",
+    description: "Stylish fashion photography capturing the latest trends and designs. Badri Digital, Casablanca.",
+    keywords:    "fashion photography Casablanca, fashion photographer Morocco, fashion photographer Badri Digital",
+  }
 }
 
 export default function Portfolio() {
@@ -188,7 +205,7 @@ export default function Portfolio() {
                 href={img.src}
                 data-pswp-width={img.w}
                 data-pswp-height={img.h}
-                className="group mb-6 block break-inside-avoid overflow-hidden border-2 border-white"
+                className="group mb-6 block break-inside-avoid overflow-hidden"
               >
                 <img
                   src={img.src}
