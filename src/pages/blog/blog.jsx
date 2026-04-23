@@ -6,13 +6,12 @@ export default function Blog() {
     <section className="min-h-screen bg-black px-4 py-16 text-white md:px-10 lg:px-20">
       <div className="mx-auto max-w-7xl">
         <div className="mb-14 text-center">
-          <h1 className="mt-4 text-4xl font-medium tracking-tight sm:text-5xl md:text-6xl">
-            Blog
+          <h1 className="mt-4 uppercase text-4xl font-medium tracking-tight sm:text-5xl md:text-6xl">
+            Blogs
           </h1>
 
           <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-white/60 md:text-base">
-            Thoughts, insights, and visual notes around storytelling, design,
-            motion, and creative direction.
+            Stories - Motion - Direction.
           </p>
         </div>
 

@@ -19,6 +19,21 @@ import concert1  from "../../assets/images/concerts-festivals/omar-sayed.webp"
 import concert2  from "../../assets/images/concerts-festivals/festival-mawazine-ibtissam-tiskat.webp"
 import concert3  from "../../assets/images/concerts-festivals/larbi-batma.webp"
 import concert5  from "../../assets/images/concerts-festivals/mawazine-nass-el-ghiwane.webp"
+// conferences img imports
+import ipss from "../../assets/images/events-conferences/ipss-event1.webp"
+import ipss2 from "../../assets/images/events-conferences/ipss-event2.webp"
+import ipss3 from "../../assets/images/events-conferences/ipss-event3.webp"
+import ipss4 from "../../assets/images/events-conferences/ipss-event4.webp"
+import ipss5 from "../../assets/images/events-conferences/ipss-event5.webp"
+import ipss6 from "../../assets/images/events-conferences/ipss-event6.webp"
+import cms from "../../assets/images/events-conferences/cms.webp"
+import cms2 from "../../assets/images/events-conferences/cms2.webp"
+import cms3 from "../../assets/images/events-conferences/cms3.webp"
+import cms4 from "../../assets/images/events-conferences/cms4.webp"
+import cms5 from "../../assets/images/events-conferences/cms5.webp"
+import cms6 from "../../assets/images/events-conferences/cms6.webp"
+import cms7 from "../../assets/images/events-conferences/cms7.webp"
+
 
 
 const IMAGES = [
@@ -35,9 +50,24 @@ const IMAGES = [
   { id: "concert-2", src: concert2,   w: 3459, h: 4613, category: "festivals", alt: "Concert photography - Ibtissam Tiskat" },
   { id: "concert-3", src: concert3,   w: 4884, h: 3256, category: "festivals", alt: "Concert photography - Larbi Batma" },
   { id: "concert-5", src: concert5,   w: 3368, h: 4491, category: "festivals", alt: "Concert photography - Omar Sayed" },
+  { id: "ipss-event-1", src: ipss,   w: 4000, h: 5333, category: "conferences", alt: "IPSS Conference photography" },
+  { id: "ipss-event-2", src: ipss2,   w: 5414, h: 3609, category: "conferences", alt: "IPSS Conference photography" },
+  { id: "ipss-event-3", src: ipss3,   w: 4835, h: 3223, category: "conferences", alt: "IPSS Conference photography" },
+  { id: "ipss-event-4", src: ipss4,   w: 6000, h: 4000, category: "conferences", alt: "IPSS Conference photography" },
+  { id: "ipss-event-5", src: ipss5,   w: 5209, h: 3472, category: "conferences", alt: "IPSS Conference photography" },
+  { id: "ipss-event-6", src: ipss6,   w: 3666, h: 4881, category: "conferences", alt: "IPSS Conference photography" },
+    { id: "cms-event-1", src: cms,   w: 4210, h: 2807, category: "events", alt: "Concours Musical Stars Event" },
+  { id: "cms-event-2", src: cms2,   w: 3093, h: 4124, category: "events", alt: "Concours Musical Stars Event" },
+  { id: "cms-event-3", src: cms3,   w: 4154, h: 2769, category: "events", alt: "Concours Musical Stars Event" },
+  { id: "cms-event-4", src: cms4,   w: 1391, h: 1855, category: "events", alt: "Concours Musical Stars Event" },
+  { id: "cms-event-5", src: cms5,   w: 3343, h: 2229, category: "events", alt: "Concours Musical Stars Event" },
+  { id: "cms-event-6", src: cms6,   w: 2057 , h: 2742, category: "events", alt: "Concours Musical Stars Event" },
+  { id: "cms-event-7", src: cms7,   w: 3503, h: 2335, category: "events", alt: "Concours Musical Stars Event" },
+
+
 ]
 
-const CATEGORIES = ["all","conferences", "festivals","fashion"]
+const CATEGORIES = ["all","conferences", "festivals","fashion","events"]
 
 const SEO_META = {
   all: {
@@ -60,6 +90,12 @@ const SEO_META = {
     description: "Capturing the energy and excitement of live concerts and festivals. Badri Digital, Casablanca.",
     keywords:    "concert photography Casablanca, festival photographer Morocco, live music photographer Badri Digital",
   },
+  events : {
+    title:       "Events Photography Portfolio | Badri Digital Casablanca",
+    description: "Capturing the energy and excitement of live Events. Badri Digital, Casablanca.",
+    keywords:    "Events photography Casablanca, festival photographer Morocco, live music photographer Badri Digital",
+
+  }
 }
 
 export default function Portfolio() {
@@ -119,29 +155,22 @@ export default function Portfolio() {
   {/* Content */}
   <div className="relative z-10 text-center text-white px-6 max-w-4xl">
     
-    <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6">
+    <h1 className="text-5xl uppercase md:text-7xl font-bold tracking-tight mb-6">
       Portfolio
     </h1>
 
     <p className="text-white/80 text-base md:text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
-      Capturing powerful moments across sports, events, conferences, and food photography in Casablanca.
+      Turning moments into timeless stories. Explore the diverse portfolio of Badri Digital.
     </p>
 
     {/* CTA (optional but strong for UX) */}
-    <div className="flex justify-center gap-4 flex-wrap">
+    <div className="flex justify-center">
       <button
         onClick={() => document.getElementById("portfolio-gallery")?.scrollIntoView({ behavior: "smooth" })}
-        className="px-6 py-3 bg-white text-black text-sm uppercase tracking-widest hover:bg-white/80 transition"
+        className="cursor-pointer px-6 py-3 bg-white text-black text-sm uppercase tracking-widest hover:bg-white/80 transition"
       >
         Explore Work
       </button>
-
-      <a
-        href="/contact"
-        className="px-6 py-3 border border-white text-white text-sm uppercase tracking-widest hover:bg-white hover:text-black transition"
-      >
-        Contact
-      </a>
     </div>
 
   </div>

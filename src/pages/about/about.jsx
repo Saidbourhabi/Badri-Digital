@@ -1,7 +1,7 @@
 import React from 'react';
 import { FiArrowRight } from 'react-icons/fi';
 import { FiCheck } from 'react-icons/fi';
-import alibedri from '../../assets/images/badridigital-owners.jpeg';
+import badri from '../../assets/images/about/badri.webp';
 import SEO from '../../components/seo/SEO';
 
 const About = () => {
@@ -13,7 +13,7 @@ const About = () => {
         description="Badri Digital is a photographer and videographer based in Casablanca specializing in events, weddings, conferences, media days and content creation."
         keywords="Badri Digital, photographer Casablanca, videographer Morocco, event photography Casablanca, wedding photographer Casablanca"
         url="https://www.badri.digital/about"
-        image="https://www.badri.digital/badri-ali.jpeg"
+        image="https://www.badri.digital/badri.webp"
       />
 
       {/* HERO SECTION */}
@@ -23,7 +23,7 @@ const About = () => {
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{ 
-              backgroundImage: `url(${alibedri})`,
+              backgroundImage: `url(${badri})`,
               backgroundPosition: 'center',
               backgroundSize: 'cover'
             }}
@@ -57,7 +57,7 @@ const About = () => {
 
               <div className="space-y-4 pt-4 text-gray-700 leading-relaxed">
                 <p>
-                  is a creative visual production project started by <span className="font-semibold">Badri Ali</span>, a passionate photographer, in collaboration with his father <span className="font-semibold">Badri Khalid</span>, a professional film director with over 34 years of experience in the audiovisual field.
+                  Is a creative visual production project started by <a href="https://www.instagram.com/alii_badrii/" target='_blank' className="font-semibold">Badri Ali</a>, a passionate photographer, in collaboration with his father <a href="https://www.facebook.com/sreadcadresread?mibextid=wwXIfr&rdid=WM1Ct2m8xo8OVEm0&share_url=https%3A%2F%2F" target='_blank' className="font-semibold">Badri Khalid</a>, a professional film director with over 34 years of experience in the audiovisual field.
                 </p>
 
                 <p>
@@ -102,7 +102,7 @@ const About = () => {
 
                 <div className="space-y-4 text-gray-700 leading-relaxed">
                   <p>
-                    Our goal is to grow Badri Digital into a <span className="font-semibold">leading visual production brand</span>, known for creativity, quality, and strong storytelling.
+                    Is to grow Badri Digital into a <span className="font-semibold">leading visual production brand</span>, known for creativity, quality, and strong storytelling.
                   </p>
 
                   <p>
@@ -127,12 +127,12 @@ const About = () => {
               </div>
 
               {/* Experience Badge */}
-              <div className="bg-gray-900 text-white p-8 rounded-lg">
+              <div className="bg-[#000000] text-white p-8 rounded-lg">
                 <p className="text-sm font-semibold uppercase tracking-widest text-gray-400 mb-2">
                   Experience
                 </p>
                 <p className="text-5xl font-bold">34+</p>
-                <p className="text-gray-300 mt-2">Years of Professional Audiovisual Production</p>
+                <p className="mt-2">Years of Professional Audiovisual Production</p>
               </div>
             </div>
           </div>
