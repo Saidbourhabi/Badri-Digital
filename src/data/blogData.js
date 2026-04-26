@@ -1,5 +1,6 @@
 import siham from "../assets/images/blog/sayed-badri.webp";
 import cms from "../assets/images/blog/cms.webp";
+import wactt from "../assets/images/blog/wac-tt.webp";
 
 
 export const blogPosts = [
@@ -34,6 +35,22 @@ export const blogPosts = [
     "From the first notes to confident performances, the atmosphere was filled with emotion, focus, and creativity.",
     "Our approach focused on capturing authentic moments — expressions, details, and the unique connection between each performer and their instrument.",
     "This project reflects our vision of visual storytelling: turning real moments into lasting memories."
+    ],
+},
+{
+    id: 3,
+    slug: "wac-table-tennis",
+    image: wactt,
+    title: "Wac Table Tennis Event",
+    description:
+    "Collaboration with the Wydad AC Table Tennis team,within a competitive sports environment focused on performance and precision.",
+    date: "2025",
+    production: "Badri Ali",
+    content: [
+    "We had the opportunity to document a dynamic table tennis event, where precision, speed, and focus defined every moment.",
+    "From intense rallies to quick reactions, the atmosphere was filled with energy and competition.",
+    "Our approach focused on capturing movement and timing — freezing fast-paced actions, expressions of concentration, and the rhythm of the game.",
+    "This project reflects our ability to adapt visual storytelling to different environments, capturing both emotion and action in real time.",
     ],
 },
 ];
