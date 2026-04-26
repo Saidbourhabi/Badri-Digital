@@ -19,6 +19,9 @@ import concert1  from "../../assets/images/concerts-festivals/omar-sayed.webp"
 import concert2  from "../../assets/images/concerts-festivals/festival-mawazine-ibtissam-tiskat.webp"
 import concert3  from "../../assets/images/concerts-festivals/larbi-batma.webp"
 import concert5  from "../../assets/images/concerts-festivals/mawazine-nass-el-ghiwane.webp"
+import hassam from "../../assets/images/concerts-festivals/7assam.webp"
+import hassam1 from "../../assets/images/concerts-festivals/7assam1.webp"
+import hassam2 from "../../assets/images/concerts-festivals/7assam2.webp"
 // conferences img imports
 import ipss from "../../assets/images/events-conferences/ipss-event1.webp"
 import ipss2 from "../../assets/images/events-conferences/ipss-event2.webp"
@@ -33,6 +36,10 @@ import cms4 from "../../assets/images/events-conferences/cms4.webp"
 import cms5 from "../../assets/images/events-conferences/cms5.webp"
 import cms6 from "../../assets/images/events-conferences/cms6.webp"
 import cms7 from "../../assets/images/events-conferences/cms7.webp"
+import cms8 from "../../assets/images/events-conferences/cms8.webp"
+import cms9 from "../../assets/images/events-conferences/cms9.webp"
+import cms10 from "../../assets/images/events-conferences/cms10.webp"
+import cms11 from "../../assets/images/events-conferences/cms11.webp"
 
 
 
@@ -50,6 +57,9 @@ const IMAGES = [
   { id: "concert-2", src: concert2,   w: 3459, h: 4613, category: "festivals", alt: "Concert photography - Ibtissam Tiskat" },
   { id: "concert-3", src: concert3,   w: 4884, h: 3256, category: "festivals", alt: "Concert photography - Larbi Batma" },
   { id: "concert-5", src: concert5,   w: 3368, h: 4491, category: "festivals", alt: "Concert photography - Omar Sayed" },
+  { id: "mawazine-1", src: hassam,   w: 4000, h: 6000, category: "festivals", alt: "Mawazine 7ssam tiskat" },
+  { id: "mawazine-2", src: hassam1,   w: 4000, h: 5000, category: "festivals", alt: "Mawazine 7ssam tiskat" },
+  { id: "mawazine-3", src: hassam2,   w: 3713, h: 5570, category: "festivals", alt: "Mawazine 7ssam tiskat" },
   { id: "ipss-event-1", src: ipss,   w: 4000, h: 5333, category: "conferences", alt: "IPSS Conference photography" },
   { id: "ipss-event-2", src: ipss2,   w: 5414, h: 3609, category: "conferences", alt: "IPSS Conference photography" },
   { id: "ipss-event-3", src: ipss3,   w: 4835, h: 3223, category: "conferences", alt: "IPSS Conference photography" },
@@ -63,6 +73,10 @@ const IMAGES = [
   { id: "cms-event-5", src: cms5,   w: 3343, h: 2229, category: "events", alt: "Concours Musical Stars Event" },
   { id: "cms-event-6", src: cms6,   w: 2057 , h: 2742, category: "events", alt: "Concours Musical Stars Event" },
   { id: "cms-event-7", src: cms7,   w: 3503, h: 2335, category: "events", alt: "Concours Musical Stars Event" },
+  { id: "cms-event-8", src: cms8,   w: 3427, h: 2742, category: "events", alt: "Concours Musical Stars Event" },
+  { id: "cms-event-9", src: cms9,   w: 2380, h: 1904, category: "events", alt: "Concours Musical Stars Event" },
+  { id: "cms-event-10", src: cms10,   w: 3582, h: 2866, category: "events", alt: "Concours Musical Stars Event" },
+  { id: "cms-event-11", src: cms11,   w: 4000, h: 6000, category: "events", alt: "Concours Musical Stars Event" },
 
 
 ]

@@ -4,7 +4,7 @@ const Footer = () => {
 
 return (
     <footer 
-        className=" bg-black bottom-0 left-0 w-full px-6 py-6 z-999 flex justify-between items-center pointer-events-none">
+        className=" bg-black bottom-0 left-0 w-full px-6 py-6 z-999 flex flex-col-reverse gap-2 items-center pointer-events-none">
         <div className=" text-left pointer-events-auto">
             <p className="block no-underline text-white text-xs items-center justify-center  tracking-wide">
             © Badri Digital. All rights reserved. By <a className='' href="https://www.behance.net/saidbourhabi" target='_blank'>Said Bourhabi</a>
