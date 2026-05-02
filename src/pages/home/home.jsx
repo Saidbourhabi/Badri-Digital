@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { IoCaretDownOutline } from "react-icons/io5";
 import { FiEdit3, FiFilm, FiTrendingUp } from "react-icons/fi";
 import { FaInstagram, FaFacebookF, FaLinkedinIn, FaBehance } from "react-icons/fa";
-import introVideo from "../../assets/videos/intro1.mp4";
+import alibadri from "../../assets/images/badri-ali.jpeg";
 import SEO from "../../components/seo/SEO";
 import { blogPosts } from "../../data/blogData";
 import logo2m from "../../assets/logos/2m.svg";
@@ -65,7 +65,6 @@ const SOCIAL_LINKS = [
 ];
 
 const Home = () => {
-  const videoRef = useRef(null);
   const statsRef = useRef(null);
   const [counts, setCounts] = useState(STATS.map(() => 0));
   const [hasAnimated, setHasAnimated] = useState(false);
@@ -117,40 +116,38 @@ const Home = () => {
       />
 
       <main className="bg-black text-white">
-        <section className="relative w-full h-screen overflow-hidden bg-black">
-            <video
-              ref={videoRef}
-              muted
-              loop
-              autoPlay
-              playsInline
-              preload="auto"
-              className="absolute inset-0 w-full h-full object-cover"
-              style={{ pointerEvents: 'none' }}
-            >
-              <source src={introVideo} type="video/mp4" />
-            </video>
+<section 
+  className="relative w-full h-screen overflow-hidden flex flex-col items-center justify-center"
+  style={{
+    backgroundImage: `url(${alibadri})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundAttachment: 'fixed'
+  }}
+>
+  {/* Dark overlay */}
+  <div className="absolute inset-0 bg-black/30" />
+  
+  {/* Content */}
+  <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 h-full">
+    <p className="mb-4 text-xs md:text-sm uppercase tracking-[0.45em] text-white/80">
+      Visual Storytelling Studio
+    </p>
+    <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white">
+      BADRI DIGITAL
+    </h1>
+    <p className="mt-5 max-w-2xl uppercase text-sm md:text-base text-white/75 leading-relaxed">
+      We create timeless images and films for people, brands, and
+      events that deserve to be remembered.
+    </p>
+  </div>
 
-          <div className="absolute inset-0 bg-black/30" />
-
-          <div className="relative h-full flex flex-col items-center justify-center text-center px-6">
-            <p className="mb-4 text-xs md:text-sm uppercase tracking-[0.45em] text-white/80">
-              Visual Storytelling Studio
-            </p>
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
-              BADRI DIGITAL
-            </h1>
-            <p className="mt-5 max-w-2xl uppercase text-sm md:text-base text-white/75 leading-relaxed">
-              We create timeless images and films for people, brands, and
-              events that deserve to be remembered.
-            </p>
-          </div>
-
-          <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 animate-bounce">
-            <span className="text-white text-xs tracking-[3px]">SCROLL DOWN</span>
-            <IoCaretDownOutline className="w-5 h-5 text-white" />
-          </div>
-        </section>
+  {/* Scroll indicator */}
+  <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 animate-bounce z-10">
+    <span className="text-white text-xs tracking-[3px]">SCROLL DOWN</span>
+    <IoCaretDownOutline className="w-5 h-5 text-white" />
+  </div>
+</section>
         {/* ----------------------------------------------- */}
 
         <section className="w-full py-20 md:py-24 ">
