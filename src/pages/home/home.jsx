@@ -7,11 +7,16 @@ import alibadri from "../../assets/images/badri-ali.jpeg";
 import SEO from "../../components/seo/SEO";
 import { blogPosts } from "../../data/blogData";
 import logo2m from "../../assets/logos/2m.svg";
-import logoMawazine from "../../assets/logos/Mawazine.svg";
+import logoMawazine from "../../assets/logos/mawazine.png";
 import logoNasElGhiwane from "../../assets/logos/nas-el-ghiwane.svg";
+import logoPolicyCenter from "../../assets/logos/Logopolicy.png";
+import logoipss from "../../assets/logos/ipss.png"
+import logopps from "../../assets/logos/logopps_top.gif"
+import wydadaclogo from "../../assets/logos/wac.png"
+import escalogo from "../../assets/logos/esca.png"
 
 const STATS = [
-  { label: "Projects Delivered", value: 50},
+  { label: "Projects Delivered", value: 30},
   { label: "Years In Business", value: 34},
   { label: "Photographs Delivered", value: 10000},
 ];
@@ -20,6 +25,11 @@ const CLIENT_LOGOS = [
   { id: "2m", name: "2M", src: logo2m },
   { id: "mawazine", name: "Mawazine", src: logoMawazine },
   { id: "nas-el-ghiwane", name: "Nas El Ghiwane", src: logoNasElGhiwane },
+  {id: "policy-center" , name: "Policy Center", src: logoPolicyCenter},
+  {id: "ipss" , name: "IPSS", src: logoipss},
+  {id: "pps", name:"PPS", src: logopps},
+  {id: "wydad-ac", name:"Wydad AC", src: wydadaclogo},
+  {id: "esca", name:"ESCA", src: escalogo}
 ];
 
 const SERVICES = [
@@ -53,13 +63,13 @@ const SOCIAL_LINKS = [
   {
     id: "behance",
     name: "Behance",
-    href: "https://www.behance.net/badridigital",
+    href: "https://www.behance.net/badriali",
     Icon: FaBehance,
   },
   {
     id: "linkedin",
     name: "LinkedIn",
-    href: "https://www.linkedin.com/in/badri.digital/",
+    href: "https://www.linkedin.com/company/badri-digital/",
     Icon: FaLinkedinIn ,
   },
 ];
@@ -177,7 +187,7 @@ const Home = () => {
         </section>
         {/* ----------------------------------------------- */}
 
-        <section ref={statsRef} className="w-full py-20 md:py-24 bg-black">
+        <section ref={statsRef} className="w-full py-20 md:py-10 bg-black">
           <div className="max-w-7xl mx-auto px-6 lg:px-12 mb-10 text-center">
             <p className="text-xs md:text-sm uppercase tracking-[0.35em] text-white/60 mb-4">
               Badri Digital In Numbers
@@ -285,10 +295,10 @@ const Home = () => {
         <section className="w-full py-20 md:py-15 bg-black">
           <div className="max-w-7xl mx-auto px-6 lg:px-12">
             <div className="mb-10">
-              <p className="text-xs md:text-sm uppercase tracking-[0.35em] text-white/60 mb-4">
+              <p className="text-xs md:text-sm text-center uppercase tracking-[0.35em] text-white/60 mb-4">
                 Clients
               </p>
-              <h2 className="text-3xl md:text-4xl uppercase font-bold tracking-tight">
+              <h2 className="text-3xl md:text-4xl text-center uppercase font-bold tracking-tight">
                 Trusted by Visionary Brands
               </h2>
             </div>
