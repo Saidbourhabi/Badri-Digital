@@ -132,6 +132,8 @@ const Home = () => {
             playsInline
             preload="metadata"
             className="absolute inset-0 w-full h-full object-cover"
+            controls={false}
+            style={{ pointerEvents: 'none' }}
           >
             <source src={introVideo} type="video/mp4" />
           </video>
