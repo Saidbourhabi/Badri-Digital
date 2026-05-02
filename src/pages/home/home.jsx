@@ -70,17 +70,6 @@ const Home = () => {
   const [counts, setCounts] = useState(STATS.map(() => 0));
   const [hasAnimated, setHasAnimated] = useState(false);
 
-  useEffect(() => {
-    const video = videoRef.current;
-    if (video) {
-      // Ensure video is muted before playing
-      video.muted = true;
-      video.play().catch((error) => {
-        console.log("Video autoplay prevented:", error);
-      });
-    }
-  }, []);
-
 
   useEffect(() => {
     if (!statsRef.current || hasAnimated) return;
@@ -133,6 +122,7 @@ const Home = () => {
               ref={videoRef}
               muted
               loop
+              autoPlay
               playsInline
               preload="auto"
               className="absolute inset-0 w-full h-full object-cover"
