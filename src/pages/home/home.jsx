@@ -73,9 +73,14 @@ const Home = () => {
   useEffect(() => {
     const video = videoRef.current;
     if (video) {
-      video.play().catch(() => {});
+      // Ensure video is muted before playing
+      video.muted = true;
+      video.play().catch((error) => {
+        console.log("Video autoplay prevented:", error);
+      });
     }
   }, []);
+
 
   useEffect(() => {
     if (!statsRef.current || hasAnimated) return;
@@ -124,19 +129,17 @@ const Home = () => {
 
       <main className="bg-black text-white">
         <section className="relative w-full h-screen overflow-hidden bg-black">
-          <video
-            ref={videoRef}
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="metadata"
-            className="absolute inset-0 w-full h-full object-cover"
-            controls={false}
-            style={{ pointerEvents: 'none' }}
-          >
-            <source src={introVideo} type="video/mp4" />
-          </video>
+            <video
+              ref={videoRef}
+              muted
+              loop
+              playsInline
+              preload="auto"
+              className="absolute inset-0 w-full h-full object-cover"
+              style={{ pointerEvents: 'none' }}
+            >
+              <source src={introVideo} type="video/mp4" />
+            </video>
 
           <div className="absolute inset-0 bg-black/30" />
 
