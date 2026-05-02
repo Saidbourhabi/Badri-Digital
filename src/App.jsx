@@ -15,6 +15,7 @@ import Navbar from './components/layouts/Navbar'
 import Footer from './components/layouts/Footer'
 // UI components
 import Loader from './components/ui/Loader'
+import WhatsAppButton from './components/ui/WhatsAppButton'
 // import CustomCursor from './components/ui/CustomCursor'
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
         {/*  404 page route */}
       <Route path="*" element={<NotFound />} />
     </Routes>
+    <WhatsAppButton />
     <Footer />
     </>
   )

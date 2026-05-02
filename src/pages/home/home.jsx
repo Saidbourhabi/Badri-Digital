@@ -3,17 +3,18 @@ import { Link } from "react-router-dom";
 import { IoCaretDownOutline } from "react-icons/io5";
 import { FiEdit3, FiFilm, FiTrendingUp } from "react-icons/fi";
 import { FaInstagram, FaFacebookF, FaLinkedinIn, FaBehance } from "react-icons/fa";
-import alibadri from "../../assets/images/badri-ali.jpeg";
+import alibadri from "../../assets/images/badriali-banner.webp";
 import SEO from "../../components/seo/SEO";
 import { blogPosts } from "../../data/blogData";
 import logo2m from "../../assets/logos/2m.svg";
-import logoMawazine from "../../assets/logos/mawazine.png";
+import logondh from "../../assets/logos/indh.png";
 import logoNasElGhiwane from "../../assets/logos/nas-el-ghiwane.svg";
 import logoPolicyCenter from "../../assets/logos/Logopolicy.png";
 import logoipss from "../../assets/logos/ipss.png"
 import logopps from "../../assets/logos/logopps_top.gif"
 import wydadaclogo from "../../assets/logos/wac.png"
 import escalogo from "../../assets/logos/esca.png"
+import mawazine from "../../assets/logos/mawazine.png"
 
 const STATS = [
   { label: "Projects Delivered", value: 30},
@@ -23,13 +24,14 @@ const STATS = [
 
 const CLIENT_LOGOS = [
   { id: "2m", name: "2M", src: logo2m },
-  { id: "mawazine", name: "Mawazine", src: logoMawazine },
+  { id: "ndh", name: "National Initiative for Human Development", src: logondh },
   { id: "nas-el-ghiwane", name: "Nas El Ghiwane", src: logoNasElGhiwane },
   {id: "policy-center" , name: "Policy Center", src: logoPolicyCenter},
   {id: "ipss" , name: "IPSS", src: logoipss},
   {id: "pps", name:"PPS", src: logopps},
   {id: "wydad-ac", name:"Wydad AC", src: wydadaclogo},
   {id: "esca", name:"ESCA", src: escalogo}
+  ,{id: "mawazine", name:"Mawazine", src: mawazine}
 ];
 
 const SERVICES = [
