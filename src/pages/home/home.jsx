@@ -119,14 +119,13 @@ const Home = () => {
 <section 
   className="relative w-full h-screen overflow-hidden flex flex-col items-center justify-center"
   style={{
-    backgroundImage: `url(${alibadri})`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundAttachment: 'fixed'
+  backgroundImage: `url(${alibadri})`,
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+  backgroundAttachment: 'fixed',
+  backgroundColor: '#000' // Fallback color while image loads
   }}
 >
-  {/* Dark overlay */}
-  <div className="absolute inset-0 bg-black/30" />
   
   {/* Content */}
   <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 h-full">
