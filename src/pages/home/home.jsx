@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { IoCaretDownOutline } from "react-icons/io5";
 import { FiEdit3, FiFilm, FiTrendingUp } from "react-icons/fi";
 import { FaInstagram, FaFacebookF, FaLinkedinIn, FaBehance } from "react-icons/fa";
-import introVideo from "../../assets/videos/intro1.webm";
+import introVideo from "../../assets/videos/intro1.mp4";
 import SEO from "../../components/seo/SEO";
 import { blogPosts } from "../../data/blogData";
 import logo2m from "../../assets/logos/2m.svg";
@@ -133,7 +133,7 @@ const Home = () => {
             preload="metadata"
             className="absolute inset-0 w-full h-full object-cover"
           >
-            <source src={introVideo} type="video/webm" />
+            <source src={introVideo} type="video/mp4" />
           </video>
 
           <div className="absolute inset-0 bg-black/30" />
