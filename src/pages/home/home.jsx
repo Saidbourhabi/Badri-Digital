@@ -162,10 +162,10 @@ const Home = () => {
         <section className="w-full py-20 md:py-24 ">
           <div className="max-w-7xl mx-auto px-6 lg:px-12">
             <div className="mb-10">
-              <p className="text-xs md:text-sm uppercase tracking-[0.35em] text-white/60 mb-4">
+              <p className="text-xs text-center md:text-sm uppercase tracking-[0.35em] text-white/60 mb-4">
                 Our Services
               </p>
-              <h2 className="text-3xl uppercase md:text-4xl font-bold tracking-tight mb-3">
+              <h2 className="text-3xl text-center uppercase md:text-4xl font-bold tracking-tight mb-3">
                 Our dedicated employees are happy to assist you with know-how and experience in your daily business.
               </h2>
             </div>
