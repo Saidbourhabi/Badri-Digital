@@ -2,22 +2,10 @@ import SEO from "../../components/seo/SEO"
 import camerabg from "../../assets/images/oldcamera.webp"
 
 import {
-  FaWhatsapp,
   FaEnvelope,
   FaPhone,
 } from "react-icons/fa6"
 
-
-
-const SOCIALS = [
-  {
-    id:    "whatsapp",
-    href:  "https://wa.me/212665436093",
-    icon:  <FaWhatsapp size={22} />,
-    label: "WhatsApp",
-  },
-  
-]
 
 export default function Contact() {
   return (
@@ -71,22 +59,6 @@ export default function Contact() {
             >
               +212 665-436093
             </a>
-
-            {/* Social icons */}
-            <div className="flex items-center justify-center gap-7 mt-10">
-              {SOCIALS.map((s) => (
-                <a
-                  key={s.id}
-                  href={s.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={s.label}
-                  className="text-white/80 hover:text-white transition-colors duration-200"
-                >
-                  {s.icon}
-                </a>
-              ))}
-            </div>
           </div>
         </div>
 

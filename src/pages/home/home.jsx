@@ -15,6 +15,7 @@ import logopps from "../../assets/logos/logopps_top.gif"
 import wydadaclogo from "../../assets/logos/wac.png"
 import escalogo from "../../assets/logos/esca.png"
 import mawazine from "../../assets/logos/mawazine.png"
+import LatestWorks from "../../components/home/LatestWorks";
 
 const STATS = [
   { label: "Projects Delivered", value: 30},
@@ -168,13 +169,13 @@ const Home = () => {
                 Our Services
               </p>
               <h2 className="text-3xl text-center uppercase md:text-4xl font-bold tracking-tight mb-3">
-                Our dedicated employees are happy to assist you with know-how and experience in your daily business.
+                We help brands and creators bring their vision to life through high-quality visual content.
               </h2>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
               {SERVICES.map((service) => (
-                <article key={service.title} className="border  border-white/10 bg-white/2 p-7">
+                <article key={service.title} className="border border-white/10 bg-white/2 hover:border-white transition-all duration-300 cursor-pointer p-7">
                   <service.Icon className="w-7 h-7 text-white mb-5" />
                   <h3 className="text-xl uppercase font-semibold tracking-tight mb-3">
                     {service.title}
@@ -233,7 +234,7 @@ const Home = () => {
                   rel="noreferrer"
                   className="border border-white/30 bg-white/2 h-24 px-5 flex items-center justify-between hover:bg-white hover:text-black transition"
                 >
-                  <span className="text-xs uppercase tracking-[0.2em]">{social.name}</span>
+                  <span className="text-xs font-black uppercase tracking-[0.2em]">{social.name}</span>
                   <social.Icon className="w-5 h-5" />
                 </a>
               ))}
@@ -241,6 +242,8 @@ const Home = () => {
           </div>
         </section>
 
+        {/* ----------------------------------------------- */}
+        <LatestWorks />
         {/* ----------------------------------------------- */}
 
         <section className="w-full py-20 md:py-15 bg-black">
