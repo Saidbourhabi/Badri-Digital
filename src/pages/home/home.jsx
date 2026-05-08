@@ -129,37 +129,46 @@ const Home = () => {
       />
 
       <main className="bg-black text-white">
-<section 
-  className="relative w-full h-screen overflow-hidden flex flex-col items-center justify-center"
-  style={{
-  backgroundImage: `url(${alibadri})`,
-  backgroundSize: 'cover',
-  backgroundPosition: 'center',
-  backgroundAttachment: 'fixed',
-  backgroundColor: '#000' // Fallback color while image loads
-  }}
->
-  
-  {/* Content */}
-  <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 h-full">
-    <p className="mb-4 text-xs md:text-sm uppercase tracking-[0.45em] text-white/80">
-      Visual Storytelling Studio
-    </p>
-    <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white">
-      BADRI DIGITAL
-    </h1>
-    <p className="mt-5 max-w-2xl uppercase text-sm md:text-base text-white/75 leading-relaxed">
-      We create timeless images and films for people, brands, and
-      events that deserve to be remembered.
-    </p>
-  </div>
-
-  {/* Scroll indicator */}
-  <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 animate-bounce z-10">
-    <span className="text-white text-xs tracking-[3px]">SCROLL DOWN</span>
-    <IoCaretDownOutline className="w-5 h-5 text-white" />
-  </div>
-</section>
+      <section 
+        className="relative w-full h-screen overflow-hidden flex flex-col items-center justify-center"
+        style={{
+          backgroundColor: '#000' // Fallback color while image loads
+        }}
+      >
+        {/* Fixed background layer - iOS safe */}
+        <div 
+          className="absolute inset-0"
+          style={{
+            backgroundImage: `url(${alibadri})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundAttachment: 'fixed'
+          }}
+        />
+        
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black/30" />
+        
+        {/* Content */}
+        <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 h-full">
+          <p className="mb-4 text-xs md:text-sm uppercase tracking-[0.45em] text-white/80">
+            Visual Storytelling Studio
+          </p>
+          <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white">
+            BADRI DIGITAL
+          </h1>
+          <p className="mt-5 max-w-2xl uppercase text-sm md:text-base text-white/75 leading-relaxed">
+            We create timeless images and films for people, brands, and
+            events that deserve to be remembered.
+          </p>
+        </div>
+      
+        {/* Scroll indicator */}
+        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 animate-bounce z-10">
+          <span className="text-white text-xs tracking-[3px]">SCROLL DOWN</span>
+          <IoCaretDownOutline className="w-5 h-5 text-white" />
+        </div>
+      </section>
         {/* ----------------------------------------------- */}
 
         <section className="w-full py-20 md:py-24 ">

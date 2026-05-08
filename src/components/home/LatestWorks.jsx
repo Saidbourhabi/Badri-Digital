@@ -3,13 +3,14 @@
 import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/css"
 import { Autoplay } from "swiper/modules"
+import { Link } from 'react-router-dom'
 
-import img1 from "../../assets/images/fashion/outfit-blue.webp"
-import img2 from "../../assets/images/fashion/outfit-pink.webp"
-import img3 from "../../assets/images/fashion/outfit-sky.webp"
-import img4 from "../../assets/images/fashion/smile-portrait.webp"
-import img5 from "../../assets/images/fashion/outfit-secend-blue.webp"
-import img6 from "../../assets/images/fashion/outfit-white.webp"
+import img1 from "../../assets/images/fashion/outfit-pink.webp"
+import img2 from "../../assets/images/concerts-festivals/festival-mawazine-ibtissam-tiskat.webp"
+import img3 from "../../assets/images/fashion/outfit-white.webp"
+import img4 from "../../assets/images/concerts-festivals/larbi-batma.webp"
+import img5 from "../../assets/images/events-conferences/cms2.webp"
+import img6 from "../../assets/images/concerts-festivals/7assam2.webp"
 
 export default function LatestWorks() {
 
@@ -66,6 +67,14 @@ export default function LatestWorks() {
             </SwiperSlide>
     ))}
     </Swiper>
+        {/* VIEW PORTFOLIO BUTTON */}
+        <div className="text-center mt-8">
+          <Link to="/portfolio">
+            <button className="bg-white cursor-pointer text-black px-6 py-3 uppercase tracking-wide font-semibold hover:bg-gray-200 transition duration-300">
+              View Full Portfolio
+            </button>
+          </Link>
+        </div>
     </div>
     </section>
 )
