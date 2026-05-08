@@ -142,7 +142,6 @@ const Home = () => {
             backgroundImage: `url(${alibadri})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            backgroundAttachment: 'fixed'
           }}
         />
         
