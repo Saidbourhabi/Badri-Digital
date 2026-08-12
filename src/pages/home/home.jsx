@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { IoCaretDownOutline } from "react-icons/io5";
 import { FiEdit3, FiFilm, FiTrendingUp } from "react-icons/fi";
 import { FaInstagram, FaFacebookF, FaLinkedinIn, FaBehance } from "react-icons/fa";
-import alibadri from "../../assets/images/badriali-banner.webp";
 import SEO from "../../components/seo/SEO";
 import { blogPosts } from "../../data/blogData";
 import logo2m from "../../assets/logos/2m.svg";
@@ -118,6 +117,20 @@ const Home = () => {
     return () => observer.disconnect();
   }, [hasAnimated]);
 
+  const CLOUDINARY_NAME = import.meta.env.VITE_CLOUDINARY_NAME;
+const CLOUDINARY_BASE = `https://res.cloudinary.com/${CLOUDINARY_NAME}/image/upload`;
+
+const buildCloudinaryUrl = (publicId, width, height) => {
+  const parts = [];
+  if (width) parts.push(`w_${width}`);
+  if (height) parts.push(`h_${height}`);
+  parts.push('c_fill', 'f_auto', 'q_auto');
+  return `${CLOUDINARY_BASE}/${parts.join(',')}/${publicId}`;
+};
+
+const HERO_IMAGE_PUBLIC_ID = 'badriali-banner_ziytfl.webp'; 
+const heroImageUrl = buildCloudinaryUrl(HERO_IMAGE_PUBLIC_ID, 1920, 1080);
+
   return (
     <>
       <SEO
@@ -139,10 +152,11 @@ const Home = () => {
         <div 
           className="absolute inset-0"
           style={{
-            backgroundImage: `url(${alibadri})`,
+            backgroundImage: `url(${heroImageUrl})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
+          fetchpriority="high"
         />
         
         {/* Dark overlay */}

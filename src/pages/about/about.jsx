@@ -1,8 +1,21 @@
 import React from 'react';
 import { FiArrowRight } from 'react-icons/fi';
 import { FiCheck } from 'react-icons/fi';
-import badri from '../../assets/images/about/badri.webp';
 import SEO from '../../components/seo/SEO';
+
+const CLOUDINARY_NAME = import.meta.env.VITE_CLOUDINARY_NAME;
+const CLOUDINARY_BASE = `https://res.cloudinary.com/${CLOUDINARY_NAME}/image/upload`;
+
+const buildCloudinaryUrl = (publicId, width, height) => {
+  const parts = [];
+  if (width) parts.push(`w_${width}`);
+  if (height) parts.push(`h_${height}`);
+  parts.push('c_fill', 'f_auto', 'q_auto');
+  return `${CLOUDINARY_BASE}/${parts.join(',')}/${publicId}`;
+};
+
+const HERO_IMAGE_PUBLIC_ID = 'badri_dglqw3.webp'; 
+const heroImageUrl = buildCloudinaryUrl(HERO_IMAGE_PUBLIC_ID, 1920, 1080);
 
 const About = () => {
   return (
@@ -23,7 +36,7 @@ const About = () => {
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{ 
-              backgroundImage: `url(${badri})`,
+              backgroundImage: `url(${heroImageUrl})`,
               backgroundPosition: 'center',
               backgroundSize: 'cover'
             }}
